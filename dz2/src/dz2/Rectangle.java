@@ -15,15 +15,15 @@ public class Rectangle extends Shape{
 		this.d = d;
 		
 		if(a!=b && b!=c && c!=d && a!=d) {
-			System.out.println("Прямоугольник создан");
-		} else System.out.println("По заданым точкам прямоугольник не может быть создан");
+			System.out.println("Rectangle is created");
+		} else System.out.println("Input other point");
 		}
 
 	@Override
 	double perimetr() {
 		double P=0;
 		P=a.length(b)+b.length(c)+c.length(d)+d.length(a);
-		System.out.println("Периметр прямоугольника равен: "+P);
+		System.out.println("The Rectangle perimeter is:  "+P);
 		return P;
 	}
 
@@ -31,7 +31,7 @@ public class Rectangle extends Shape{
 	double area() {
 		double S=0;
 		S=a.length(b)+b.length(c);
-		System.out.println("Площадь прямоугольника равна: "+S);
+		System.out.println("The Rectangle area is:  "+S);
 		return S;
 	}
 

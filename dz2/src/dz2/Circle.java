@@ -14,8 +14,8 @@ public class Circle extends Shape{
 				
 		if (centr!=point){
 			
-			System.out.println("Круг создан");
-		} else System.out.println("Введите другие точки");
+			System.out.println("Circle is created");
+		} else System.out.println("Input other point");
 	}
 
 	@Override
@@ -23,7 +23,7 @@ public class Circle extends Shape{
 		double radius=0, P=0;
 		radius = Math.sqrt(Math.pow((centr.getX()-point.getX()), 2)+Math.pow((centr.getY()-point.getY()), 2));
 		P = 2*Math.PI*radius;
-		System.out.println("Периметр круга равен: "+P);
+		System.out.println("The Circle perimeter is:  "+P);
 		return P;
 	}
 
@@ -32,7 +32,7 @@ public class Circle extends Shape{
 		double radius=0, S=0;
 		radius = Math.sqrt(Math.pow((centr.getX()-point.getX()), 2)+Math.pow((centr.getY()-point.getY()), 2));
 		S = Math.PI*Math.pow(radius, 2);
-		System.out.println("Площадь круга равна: "+S);
+		System.out.println("The Circle area is:  "+S);
 		return S;
 	}
 

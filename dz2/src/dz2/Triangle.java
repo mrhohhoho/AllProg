@@ -14,9 +14,9 @@ public class Triangle extends Shape{
 				
 		if(a != b && a != c && b != c) {
 			 
-			System.out.println("Треуголник создан");
+			System.out.println("Triangle is created");
 			} else { 
-			System.out.println("Треугольник не может быть создан");
+			System.out.println("Input other point");
 			}
 		} 
 	
@@ -26,7 +26,7 @@ public class Triangle extends Shape{
 							
 			double P=0;
 			P= a.length(b)+b.length(c)+c.length(a);
-			System.out.println("Периметр треугольника равен: "+P);
+			System.out.println("The Triangle perimeter is:  "+P);
 			return P;
 					
 	}
@@ -38,7 +38,7 @@ public class Triangle extends Shape{
 		
 		S=Math.sqrt(P*(P-a.length(b))*(P-b.length(c))*(P-c.length(a)));
 		
-		System.out.println("Площадь треугольника равна: "+S);
+		System.out.println("The Triangle area is: "+S);
 		return S;
 	}
 
