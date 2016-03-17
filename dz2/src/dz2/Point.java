@@ -18,4 +18,9 @@ public class Point {
 		return y;
 	}
 	
+	public double length (Point b){
+		double leng = Math.sqrt(Math.pow((this.getX()-b.getX()),2)+Math.pow((this.getY()-b.getY()),2));
+		return leng;
+		
+	}
 }
