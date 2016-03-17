@@ -1,9 +1,9 @@
 package dz2;
 
 public class Circle extends Shape{
-	private double rad, P, S;
-	public Point centr;
-	public Point point;
+	
+	private Point centr;
+	private Point point;
 	
 	
 	
@@ -13,28 +13,32 @@ public class Circle extends Shape{
 		this.point = point;
 				
 		if (centr!=point){
-			rad = Math.sqrt(Math.pow((centr.getX()-point.getX()), 2)+Math.pow((centr.getY()-point.getY()), 2));
+			
 			System.out.println("Круг создан");
 		} else System.out.println("Введите другие точки");
 	}
 
 	@Override
 	double perimetr() {
-		P = 2*Math.PI*rad;
+		double radius=0, P=0;
+		radius = Math.sqrt(Math.pow((centr.getX()-point.getX()), 2)+Math.pow((centr.getY()-point.getY()), 2));
+		P = 2*Math.PI*radius;
 		System.out.println("Периметр круга равен: "+P);
 		return P;
 	}
 
 	@Override
 	double area() {
-		S = Math.PI*rad*rad;
+		double radius=0, S=0;
+		radius = Math.sqrt(Math.pow((centr.getX()-point.getX()), 2)+Math.pow((centr.getY()-point.getY()), 2));
+		S = Math.PI*Math.pow(radius, 2);
 		System.out.println("Площадь круга равна: "+S);
 		return S;
 	}
 
 	@Override
 	public String toString() {
-		return "Circle [perimetr()=" + P + ", area()=" + S + "]";
+		return "Circle [perimetr()=" + perimetr() + ", area()=" + area() + "]";
 	}
 
 }

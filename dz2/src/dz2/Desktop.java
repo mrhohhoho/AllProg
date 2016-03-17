@@ -27,7 +27,7 @@ public class Desktop {
 			System.out.println(shape);
 		}
 		else System.out.println("Область занята другой фигурой, сначала ее нужно удалить");
-		
+
 	}
 	
 	public void removeShape (){
