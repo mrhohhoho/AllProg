@@ -23,16 +23,18 @@ public class Test {
 		a.addStudent(four);
 		a.addStudent(thre);
 		a.addStudent(ten);
+		a.addInStudent();
 		a.addStudent(nine);
 		a.addStudent(eight);
 		a.addStudent(seven);
 		a.addStudent(six);
 		a.addStudent(five);
-		a.addStudent(eleven);
-		a.addStudent(twelve);
+//		a.addStudent(eleven);
+//		a.addStudent(twelve);
 		
 		a.search();
 		
+		a.sortGroup();
 
 	}
 
