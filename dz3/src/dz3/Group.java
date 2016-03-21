@@ -29,6 +29,7 @@ public class Group {
 		boolean a = false;
 		int count=0;
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		
 		System.out.print("Please input the Last Name for search: \r");
 		String lastName = "";
 		try {
@@ -77,13 +78,25 @@ public class Group {
 			e.printStackTrace();
 		}
 		String ageS = "";
+		int age = 0;
 		System.out.print("Please enter the Student's age : \r");
+		while (true) {
 		try {
 			ageS = reader.readLine();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		int age = Integer.parseInt(ageS);
+			
+		} catch (IOException e) 
+			{
+			System.out.println(e);
+			}
+		try {
+		age = Integer.parseInt(ageS);
+		break;
+			} 
+		catch (NumberFormatException e) 
+			{
+			System.out.println("Enter a number");
+			}
+		}	
 		
 		Student addInt = new Student(firsName, lastName, sex, age); 
 
@@ -103,11 +116,19 @@ public class Group {
 		
 	}
 	
+		
+	
 	public void sortGroup() {
 		
 		Arrays.sort(StGroup);
 		System.out.println("Сортировка выполнена.");
 		System.out.println(StGroup);
+		System.out.println();
+		for (int i = 0; i < StGroup.length; i++) {
+        	
+          System.out.println(StGroup[i]);
+		}
+        
 		
 		
 	}

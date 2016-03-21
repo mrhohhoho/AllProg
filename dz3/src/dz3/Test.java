@@ -29,10 +29,10 @@ public class Test {
 		a.addStudent(seven);
 		a.addStudent(six);
 		a.addStudent(five);
-//		a.addStudent(eleven);
-//		a.addStudent(twelve);
+		a.addStudent(eleven);
+		a.addStudent(twelve);
 		
-		a.search();
+//		a.search();
 		
 		a.sortGroup();
 
